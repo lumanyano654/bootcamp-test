@@ -1,5 +1,10 @@
-describe("isFromBellville", function(){
+function isFromBellville(regNumber) {
+  return regNumber.startsWith("CY");
+}
 
-    it ("should give me all those from bellvile", function(){
+describe("the function isFromBellville", function(){
+
+    it ("should return true for CY 123-223", function(){
+        assert.equal(true ,isFromBellville("CY 123-223"))
     })
 })
